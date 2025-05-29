@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  api-bomberos:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./data:/app/data:ro
+    environment:
+      - FLASK_ENV=production
+      - ADMIN_USER=alabaster
+      - ADMIN_PASS=6vuJeNeB4eVlXAXzmf
+      - JWT_SECRET_KEY=0XITm3sMGmJ9J72MffFvcKJTh_R0xtWnrAMm4mIpeRI
+      - DOCS_USER=api-bomberos
+      - DOCS_PASS=k1YapvZ01i2yYHjQMa

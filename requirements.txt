@@ -1,0 +1,7 @@
+Flask
+flask-jwt-extended
+flasgger
+PyJWT
+geopy
+gunicorn
+flask-limiter
